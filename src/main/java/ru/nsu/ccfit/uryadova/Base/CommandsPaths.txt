@@ -1,0 +1,9 @@
++ ru.nsu.ccfit.uryadova.commands.Plus
+- ru.nsu.ccfit.uryadova.commands.Minus
+* ru.nsu.ccfit.uryadova.commands.Mult
+/ ru.nsu.ccfit.uryadova.commands.Division
+SQRT ru.nsu.ccfit.uryadova.commands.Sqrt
+POP ru.nsu.ccfit.uryadova.commands.Pop
+PUSH ru.nsu.ccfit.uryadova.commands.Push
+DEFINE ru.nsu.ccfit.uryadova.commands.Define
+PRINT ru.nsu.ccfit.uryadova.commands.Print
