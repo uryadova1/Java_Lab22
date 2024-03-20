@@ -10,7 +10,6 @@ import java.io.File;
 public class BaseContext {
     private final Stack<Double> stack;
     private final HashMap<String, Double> defines;
-    private File file;
     private String filename;
 
     public BaseContext() {
@@ -20,7 +19,6 @@ public class BaseContext {
 
     public BaseContext(String filename) throws IOException {
         this.filename = filename;
-        this.file = new File(filename);
         stack = new Stack<>();
         defines = new HashMap<>();
     }

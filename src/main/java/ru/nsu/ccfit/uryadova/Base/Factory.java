@@ -5,6 +5,7 @@ import ru.nsu.ccfit.uryadova.MyExeptions.NonExistingCommand;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
 public class Factory {
@@ -21,13 +22,14 @@ public class Factory {
                 Class<?> worker = Class.forName(args[CLASS_PATH_POS]);
                 int COMMAND_POS = 0;
                 if (!commands.containsKey(COMMAND_POS)) {
-                    commands.put(args[COMMAND_POS], (Worker) worker.newInstance());
+                    commands.put(args[COMMAND_POS], (Worker) worker.getDeclaredConstructor().newInstance());
                 } else {
                     throw new NonExistingCommand("Non existing command");
                 }
                 line = reader.readLine();
             }
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e1) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | NoSuchMethodException |
+                 InvocationTargetException e1) {
             throw new RuntimeException(e1);
         }
     }
