@@ -1,5 +1,4 @@
-package ru.nsu.ccfit.uryadova.commands;
-import ru.nsu.ccfit.uryadova.Base.BaseContext;
+package ru.nsu.ccfit.uryadova.Base;
 
 
 public interface Worker {

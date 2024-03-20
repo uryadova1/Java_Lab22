@@ -1,11 +1,12 @@
 package ru.nsu.ccfit.uryadova.commands;
 
 import ru.nsu.ccfit.uryadova.Base.BaseContext;
+import ru.nsu.ccfit.uryadova.Base.Worker;
 import ru.nsu.ccfit.uryadova.MyExeptions.CommandArgsAmountException;
 
 import java.util.EmptyStackException;
 
-public class Print implements Worker{
+public class Print implements Worker {
     @Override
 
     public void execute(BaseContext context, String[] args){

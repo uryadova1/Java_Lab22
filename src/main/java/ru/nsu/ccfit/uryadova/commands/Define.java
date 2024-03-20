@@ -1,10 +1,11 @@
 package ru.nsu.ccfit.uryadova.commands;
 
 import ru.nsu.ccfit.uryadova.Base.BaseContext;
+import ru.nsu.ccfit.uryadova.Base.Worker;
 import ru.nsu.ccfit.uryadova.MyExeptions.CommandArgsAmountException;
 
 
-public class Define implements Worker{
+public class Define implements Worker {
 
     @Override
     public void execute(BaseContext context, String[] args) throws Exception{

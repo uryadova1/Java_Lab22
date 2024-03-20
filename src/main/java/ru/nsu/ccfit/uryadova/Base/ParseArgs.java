@@ -1,7 +1,5 @@
 package ru.nsu.ccfit.uryadova.Base;
 
-import ru.nsu.ccfit.uryadova.commands.Worker;
-
 import java.util.Objects;
 
 public class ParseArgs {
